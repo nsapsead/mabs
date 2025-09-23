@@ -1,0 +1,19 @@
+{
+  "navigationFallback": {
+    "rewrite": "/public/index.html",
+    "exclude": ["/assets/*", "/blog/*", "/favicon.*"]
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/public/index.html",
+      "statusCode": 200
+    }
+  },
+  "globalHeaders": {
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "no-referrer-when-downgrade",
+    "Permissions-Policy": "geolocation=(), microphone=(), camera=()"
+  }
+}
+
