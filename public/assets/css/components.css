@@ -80,12 +80,14 @@
 .card--accent::before {
   content: "";
   position: absolute;
-  left: 0; right: 0; top: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--color-gold), var(--color-gold-600));
-  border-top-left-radius: var(--radius-lg);
-  border-top-right-radius: var(--radius-lg);
+  top: 10px; bottom: 10px; left: 8px;
+  width: 4px;
+  background: linear-gradient(180deg, var(--color-gold), var(--color-gold-600));
+  border-radius: 999px;
+  opacity: 0; transition: opacity var(--duration-med) var(--easing-standard);
 }
+.card--accent:hover::before,
+.card--accent:focus-within::before { opacity: 1; }
 .card--soft {
   background: linear-gradient(#FFFFFF, #FFFFFF) padding-box,
               linear-gradient(180deg, rgba(0,0,0,.06), rgba(0,0,0,.02)) border-box;
@@ -98,11 +100,11 @@
 .card--offset-glow::after {
   content: ""; position: absolute; inset: 0; border-radius: inherit; z-index: -1;
   transform: translate(10px, 12px);
-  background: radial-gradient(60% 60% at 100% 100%, color-mix(in srgb, var(--color-gold) 32%, transparent), transparent 70%);
-  filter: blur(22px);
+  background: radial-gradient(60% 60% at 100% 100%, color-mix(in srgb, var(--color-gold) 28%, transparent), transparent 70%);
+  filter: blur(16px);
   opacity: 0; transition: opacity var(--duration-med) var(--easing-standard), transform var(--duration-med) var(--easing-standard);
 }
-.card--offset-glow:hover::after, .card--offset-glow:focus-within::after { opacity: .9; transform: translate(8px, 10px); }
+.card--offset-glow:hover::after, .card--offset-glow:focus-within::after { opacity: .4; transform: translate(8px, 10px); }
 
 /* (Removed outcomes section styles by request) */
 
