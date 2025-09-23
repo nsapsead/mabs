@@ -16,8 +16,12 @@
 }
 .logos--mono img { filter: grayscale(1) contrast(1.1) brightness(0.6); opacity: .95; }
 .logos--color img { filter: none; opacity: 1; }
-.logos img { height: auto; max-height: 80px; }
+.logos img { height: auto; max-height: 100px; }
 @media (max-width: 900px) { .logos img { max-height: 28px; } }
+
+/* Carousel variant for logos */
+.logos-carousel .slide { display: grid; place-items: center; padding: 12px; }
+.logos-carousel img { max-height: 100px; width: auto; }
 .logos--mono img:hover { opacity: 1; }
 
 .footer {
