@@ -1,0 +1,40 @@
+.split {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-6);
+  align-items: center;
+}
+@media (max-width: 900px) { .split { grid-template-columns: 1fr; } }
+
+.logos {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: var(--space-4);
+  overflow-x: auto;
+  padding-bottom: var(--space-2);
+}
+.logos--mono img { filter: grayscale(1) contrast(1.1) brightness(0.6); opacity: .95; }
+.logos--color img { filter: none; opacity: 1; }
+.logos img { height: auto; max-height: 80px; }
+@media (max-width: 900px) { .logos img { max-height: 28px; } }
+.logos--mono img:hover { opacity: 1; }
+
+.footer {
+  background: var(--color-charcoal);
+  color: var(--color-white);
+  padding: var(--space-5) 0;
+}
+/* Alternating sections + subtle texture */
+/* Remove background gradients from alternating sections as requested */
+.section--alt { background: transparent; }
+
+/* Keep subtle glow only behind hero media */
+.gold-glow { position: relative; }
+.gold-glow::before {
+  content: ""; position: absolute; inset: -6% -6% -6% -6%; z-index: -1; filter: blur(30px);
+  background: radial-gradient(600px 200px at 60% 10%, color-mix(in srgb, var(--color-gold) 35%, transparent), transparent);
+}
+.footer a { color: #E5E7EB; text-decoration: none; }
+.footer a:hover { color: var(--color-white); }
+

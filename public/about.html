@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About – MABS</title>
+    <link rel="stylesheet" href="/assets/css/tokens.css" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link rel="stylesheet" href="/assets/css/components.css" />
+    <link rel="stylesheet" href="/assets/css/layout.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="/">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span>MABS</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="/programs.html">Programs</a>
+          <a href="/blog.html">Blog</a>
+          <a href="/about.html" aria-current="page">About</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
+        <button class="button nav__toggle" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+      </div>
+    </header>
+
+    <main class="container" style="padding-top: var(--space-6); padding-bottom: var(--space-6);">
+      <h1>About MABS</h1>
+      <div class="split" style="margin-top: var(--space-4);">
+        <div>
+          <p>MABS was founded by Paul Veldman to help martial arts school owners grow sustainable, profitable schools with systems—so you can focus on doing what you love.</p>
+          <p>Join the community for weekly calls, templates, and practical training.</p>
+          <div style="margin-top: var(--space-3);">
+            <a class="button button--primary" href="https://www.skool.com/mabs/" target="_blank" rel="noopener noreferrer">Join the MABS Community</a>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <h3>What we believe</h3>
+            <ul>
+              <li>Clear offers and pricing beat guesswork.</li>
+              <li>Consistent marketing fills classes.</li>
+              <li>Simple systems keep students and grow teams.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> MABS. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="/assets/js/nav.js" defer></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+  </html>
+

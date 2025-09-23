@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Martial arts training placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="60%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#111111"/>
+    </linearGradient>
+    <radialGradient id="gold" cx="60%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FFC22B" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#FFC22B" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <rect width="1600" height="900" fill="url(#gold)"/>
+  <g fill="none" stroke="#FFC22B" stroke-opacity="0.25">
+    <circle cx="1200" cy="320" r="220"/>
+    <circle cx="1200" cy="320" r="320"/>
+  </g>
+  <g fill="#fff" fill-opacity="0.06">
+    <path d="M200 700 h1200 v60 H200z"/>
+  </g>
+  <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" fill="#FFC22B" font-size="64" font-weight="800">
+    <text x="80" y="160">MABS</text>
+  </g>
+  <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" fill="#E5E7EB" font-size="36">
+    <text x="80" y="220">High-energy training image placeholder</text>
+  </g>
+</svg>
+
