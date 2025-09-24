@@ -4,7 +4,16 @@
   gap: var(--space-6);
   align-items: center;
 }
-@media (max-width: 900px) { .split { grid-template-columns: 1fr; } }
+.split--reverse {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-6);
+  align-items: center;
+}
+@media (max-width: 900px) { 
+  .split { grid-template-columns: 1fr; } 
+  .split--reverse { grid-template-columns: 1fr; }
+}
 
 .logos {
   display: grid;
