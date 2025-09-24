@@ -58,3 +58,11 @@
   }
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-offwhite: #FAFAFA;
+    --color-ink: #1F2937;
+    --color-slate: #6B7280;
+  }
+}
+

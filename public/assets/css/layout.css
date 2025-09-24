@@ -16,8 +16,16 @@
 }
 .logos--mono img { filter: grayscale(1) contrast(1.1) brightness(0.6); opacity: .95; }
 .logos--color img { filter: none; opacity: 1; }
-.logos img { height: auto; max-height: 100px; }
-@media (max-width: 900px) { .logos img { max-height: 28px; } }
+.logos img { height: auto; max-height: 70px; }
+.logos a { 
+  display: inline-block; 
+  text-decoration: none; 
+  transition: transform var(--duration-fast) var(--easing-standard);
+}
+.logos a:hover { 
+  transform: scale(1.05); 
+}
+@media (max-width: 900px) { .logos img { max-height: 20px; } }
 
 /* Carousel variant for logos */
 .logos-carousel .slide { display: grid; place-items: center; padding: 12px; }
@@ -30,8 +38,27 @@
   padding: var(--space-5) 0;
 }
 /* Alternating sections + subtle texture */
-/* Remove background gradients from alternating sections as requested */
-.section--alt { background: transparent; }
+.section--alt { 
+  background: transparent; 
+}
+
+/* Light mode section backgrounds */
+@media (prefers-color-scheme: light) {
+  .section--alt { 
+    background: rgba(0,0,0,.02); 
+  }
+}
+
+/* Schools section - seamless with hero */
+.schools-section {
+  background: var(--color-charcoal);
+  color: var(--color-white);
+}
+
+.schools-section .section__eyebrow {
+  color: var(--color-gold);
+  text-align: left;
+}
 
 /* Keep subtle glow only behind hero media */
 .gold-glow { position: relative; }

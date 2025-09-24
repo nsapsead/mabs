@@ -22,12 +22,19 @@
 .faq__panel { display: none; padding-bottom: var(--space-3); color: #1F2937; font-size: 17px; line-height: 1.7; }
 .faq__item[aria-expanded="true"] .faq__panel { display: block; }
 
-/* Improve FAQ visibility on dark backgrounds */
+/* FAQ styling for different color schemes */
 @media (prefers-color-scheme: dark) {
   .faq { border-top-color: rgba(255,255,255,.14); }
   .faq__item { border-bottom-color: rgba(255,255,255,.14); }
   .faq__button { color: #FFFFFF; }
   .faq__panel { color: #E5E7EB; }
+}
+
+@media (prefers-color-scheme: light) {
+  .faq { border-top-color: rgba(0,0,0,.08); }
+  .faq__item { border-bottom-color: rgba(0,0,0,.08); }
+  .faq__button { color: var(--color-charcoal); }
+  .faq__panel { color: var(--color-ink); }
 }
 
 /* Rounded imagery */
@@ -47,12 +54,25 @@
 .slider__dot { width: 8px; height: 8px; border-radius: 999px; background: rgba(0,0,0,.2); }
 .slider__dot.is-active { background: var(--color-gold); }
 
-/* KPIs */
-.kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4); }
-.kpi { background: var(--color-white); border: 1px solid rgba(0,0,0,.06); border-radius: var(--radius-lg); padding: var(--space-4); text-align: center; box-shadow: var(--shadow-sm); }
-.kpi__value { font-size: var(--size-xl); font-weight: 800; color: var(--color-charcoal); }
-.kpi__label { color: #4B5563; }
-@media (max-width: 900px) { .kpis { grid-template-columns: repeat(2, 1fr); } }
+/* Focus Blurb */
+.focus-blurb {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.focus-blurb h2 {
+  font-size: var(--size-2xl);
+  margin-bottom: var(--space-4);
+  color: var(--color-charcoal);
+}
+
+.focus-blurb p {
+  font-size: var(--size-lg);
+  line-height: 1.6;
+  color: var(--color-ink);
+  margin: 0;
+}
 
 /* Product tiles */
 .tiles { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--space-3); }
@@ -67,10 +87,15 @@
 .card p, .card li { color: #1F2937; font-size: 17px; line-height: 1.65; }
 .card a { color: var(--color-charcoal); }
 
-/* Ensure light cards remain readable in dark mode */
+/* Card content readability for different color schemes */
 @media (prefers-color-scheme: dark) {
   .card h1, .card h2, .card h3, .card h4, .card h5, .card h6 { color: #111111; }
   .card p, .card li { color: #1F2937; }
+}
+
+@media (prefers-color-scheme: light) {
+  .card h1, .card h2, .card h3, .card h4, .card h5, .card h6 { color: var(--color-charcoal); }
+  .card p, .card li { color: var(--color-ink); }
 }
 
 /* Decorative accent and gradient borders for cards */
