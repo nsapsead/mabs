@@ -48,6 +48,12 @@
   color: var(--color-white);
   padding: var(--space-5) 0;
 }
+
+.footer p {
+  color: var(--color-white);
+  font-size: var(--size-base);
+  opacity: 0.9;
+}
 /* Alternating sections + subtle texture */
 .section--alt { 
   background: transparent; 
