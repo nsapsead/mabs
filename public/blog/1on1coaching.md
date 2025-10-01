@@ -17,9 +17,9 @@ seo_description: "Discover how personalized 1-on-1 coaching can be the catalyst 
 
 Running a martial arts school is one of the most rewarding things you can do, but it can also be one of the most challenging.
 
-You're not just teaching techniques. You're managing timetables, refining programs, running events, upgrading systems and juggling business operations — all while trying to grow your student base and stay inspired.
+You're not just teaching techniques. You're managing timetables, refining programs, running events, upgrading systems and juggling business operations.  All while trying to grow your student base and stay inspired.
 
-It's a lot.
+**It's a lot.**
 
 But what if you could sit down, face to face with someone who has already done what you're trying to do, and get a roadmap tailored specifically to your school, your goals and your next big idea?
 
