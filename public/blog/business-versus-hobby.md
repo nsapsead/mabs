@@ -122,8 +122,7 @@ This isn’t about perfection — it’s about progress.
 - What’s something still stuck in your head that you know you need to document or delegate?
 - What would *freedom* look like for you in 12 months’ time?
 
-Drop a comment below or send me a message.  
-Let’s talk about how to shift from “owner-operator” to “business builder.”
+To learn more check out the [MABS Community here](https://www.skool.com/mabs)
 
 Because your school deserves more.  
 **And so do you.**
