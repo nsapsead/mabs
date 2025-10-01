@@ -1,0 +1,25 @@
+{
+  "name": "mabs-blog",
+  "version": "1.0.0",
+  "description": "MABS Blog Build System",
+  "main": "build-blog.js",
+  "scripts": {
+    "build": "node build-blog.js",
+    "watch": "nodemon --watch posts --ext md --exec 'npm run build'",
+    "dev": "npm run build && npm run watch",
+    "copy": "node watch-and-copy.js",
+    "dev-full": "npm run build && concurrently \"npm run watch\" \"npm run copy\""
+  },
+  "dependencies": {
+    "marked": "^9.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "chokidar": "^3.5.3",
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["blog", "markdown", "static-site"],
+  "author": "MABS",
+  "license": "MIT"
+}
+

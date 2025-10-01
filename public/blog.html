@@ -28,10 +28,29 @@
       </div>
     </header>
 
-    <main class="container" style="padding-top: var(--space-6); padding-bottom: var(--space-6);">
-      <h1>Blog</h1>
-      <div id="blog-index" class="grid" style="grid-template-columns: repeat(3, 1fr);"></div>
+    <main class="container" style="padding-top: var(--space-8); padding-bottom: var(--space-8);">
+      <div style="text-align: center; margin-bottom: var(--space-8);">
+        <h1 style="font-size: var(--size-3xl); font-weight: 800; color: var(--color-charcoal); margin-bottom: var(--space-3); background: linear-gradient(135deg, var(--color-charcoal), var(--color-slate)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+          MABS Blog
+        </h1>
+        <p style="font-size: var(--size-lg); color: var(--color-ink); max-width: 600px; margin: 0 auto; line-height: 1.6;">
+          Expert insights, proven strategies, and actionable advice to help you grow your martial arts school business.
+        </p>
+      </div>
+      <div id="blog-index">
+        <div style="text-align: center; padding: var(--space-8);">
+          <div style="width: 40px; height: 40px; border: 3px solid var(--color-gold); border-top: 3px solid transparent; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto var(--space-4);"></div>
+          <p style="color: var(--color-slate); font-size: var(--size-base);">Loading blog posts...</p>
+        </div>
+      </div>
     </main>
+    
+    <style>
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
 
     <footer class="footer">
       <div class="container">
