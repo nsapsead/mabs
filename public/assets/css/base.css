@@ -308,14 +308,37 @@ section { padding: var(--space-6) 0; }
 
 .sticky-cta__inner {
   margin: 0 auto; 
-  max-width: 560px; 
-  background: var(--color-white); 
-  border: 1px solid rgba(0,0,0,.08); 
-  padding: 10px; 
-  border-radius: 999px; 
-  box-shadow: var(--shadow-md); 
+  max-width: 90%; 
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-600) 100%);
+  border: none; 
+  padding: 16px 24px; 
+  border-radius: 16px; 
+  box-shadow: 0 8px 32px rgba(255, 194, 43, 0.4), 0 4px 16px rgba(0, 0, 0, 0.1);
   display: flex; 
   justify-content: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sticky-cta__inner .button {
+  background: var(--color-white);
+  color: var(--color-charcoal);
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.sticky-cta__inner .button:hover {
+  background: var(--color-charcoal);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 900px) { 
@@ -323,6 +346,37 @@ section { padding: var(--space-6) 0; }
     display: block; 
     opacity: 1;
     transform: translateY(0);
-  } 
+  }
+  
+  .sticky-cta {
+    bottom: 20px;
+    left: 16px;
+    right: 16px;
+  }
+  
+  .sticky-cta__inner {
+    max-width: 100%;
+    padding: 20px 24px;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(255, 194, 43, 0.5), 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .sticky-cta__inner .button {
+    font-size: 18px;
+    padding: 16px 32px;
+    border-radius: 16px;
+    min-width: 200px;
+    animation: subtle-pulse 2s ease-in-out infinite;
+  }
+}
+
+/* Subtle pulsing animation for sticky CTA */
+@keyframes subtle-pulse {
+  0%, 100% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25), 0 0 0 4px rgba(255, 194, 43, 0.2);
+  }
 }
 
