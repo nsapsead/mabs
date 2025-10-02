@@ -9,7 +9,7 @@ async function loadHomeBlogList() {
       <article class="card" style="grid-column: span 4;">
         <h3><a href="/post.html?slug=${encodeURIComponent(p.slug)}" style="text-decoration:none;color:var(--color-charcoal)">${p.title}</a></h3>
         <p style="color:var(--color-ink)">${p.excerpt}</p>
-        <div style="margin-top:12px;color:var(--color-slate);font-size:14px;">${new Date(p.date).toLocaleDateString()}</div>
+        <div style="margin-top:12px;color:var(--color-slate);font-size:14px;">${new Date(p.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</div>
       </article>
     `).join('');
   } catch (e) {
@@ -50,11 +50,11 @@ async function renderPostFromQuery() {
           <span class="category-badge" style="background: ${categoryColor}; color: white; padding: 6px 16px; border-radius: 16px; font-size: 14px; font-weight: 600;">
             ${post.category || 'Uncategorized'}
           </span>
-          <span style="color: var(--color-slate);">${new Date(post.date).toLocaleDateString()}</span>
+          <span style="color: var(--color-slate);">${new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
           <span style="color: var(--color-slate);">•</span>
           <span style="color: var(--color-slate);">${post.reading_time || 5} min read</span>
           <span style="color: var(--color-slate);">•</span>
-          <span style="color: var(--color-slate);">By ${post.author || 'Paul Smith'}</span>
+          <span style="color: var(--color-slate);">By ${post.author || 'Paul Veldman'}</span>
         </div>
         ${post.tags && post.tags.length > 0 ? `
           <div style="margin-bottom: var(--space-4);">
@@ -103,7 +103,7 @@ async function renderPostFromQuery() {
                     </a>
                   </h4>
                   <p style="color: var(--color-ink); margin: 0 0 var(--space-2) 0; font-size: 14px; line-height: 1.5;">${p.excerpt}</p>
-                  <div style="color: var(--color-slate); font-size: 12px;">${new Date(p.date).toLocaleDateString()} • ${p.reading_time || 5} min read</div>
+                  <div style="color: var(--color-slate); font-size: 12px;">${new Date(p.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })} • ${p.reading_time || 5} min read</div>
                 </article>
               `).join('')}
             </div>
@@ -227,7 +227,7 @@ function renderBlogPost(post) {
             ${(post.author || 'P').charAt(0).toUpperCase()}
           </div>
           <div>
-            <div style="font-weight: 600; font-size: 14px; color: var(--color-charcoal); margin-bottom: 2px;">${post.author || 'Paul Smith'}</div>
+            <div style="font-weight: 600; font-size: 14px; color: var(--color-charcoal); margin-bottom: 2px;">${post.author || 'Paul Veldman'}</div>
             <div style="font-size: 12px; color: var(--color-slate); font-weight: 500;">MABS Founder</div>
           </div>
         </div>

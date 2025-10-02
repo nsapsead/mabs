@@ -93,12 +93,6 @@ function getAllBlogPosts() {
                !file.toLowerCase().includes('readme') && 
                !file.toLowerCase().includes('template') &&
                !file.startsWith('.');
-      })
-      .sort((a, b) => {
-        // Sort by filename (which should include date) or modification time
-        const statA = fs.statSync(path.join(postsDir, a));
-        const statB = fs.statSync(path.join(postsDir, b));
-        return statB.mtime - statA.mtime; // Newest first
       });
     
     for (const file of files) {
@@ -125,7 +119,7 @@ function getAllBlogPosts() {
           title: frontmatter.title,
           excerpt: frontmatter.excerpt,
           date: frontmatter.date,
-          author: frontmatter.author || 'Paul Smith',
+          author: frontmatter.author || 'Paul Veldman',
           category: frontmatter.category,
           tags: frontmatter.tags || [],
           featured_image: frontmatter.featured_image || firstImage,
@@ -142,6 +136,9 @@ function getAllBlogPosts() {
         console.error(`Error processing ${file}:`, error.message);
       }
     }
+    
+    // Sort posts by date from frontmatter (newest first)
+    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
   } catch (error) {
     console.error('Error reading blog directory:', error.message);
   }

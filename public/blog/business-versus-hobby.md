@@ -1,18 +1,14 @@
 ---
 title: "Are You Building a Business…or Just Running a Really Busy Hobby?"
-excerpt: "."
+excerpt: "Are you building a business that runs without you—or just staying busy? Learn the difference between being an owner-operator and building a lasting martial arts school."
 date: "2025-01-20"
 author: "Paul Veldman"
-category: "Entrepreneurship"
+category: "Business Growth"
 tags: ["coaching", "strategy", "ownership", "business structure"]
 featured_image: "/assets/img/business-versus-owner.png"
 reading_time: 4
-seo_title: "1-on-1 Martial Arts School Coaching - Transform Your Business"
-seo_description: "Are you building a business that works for you — or just working harder in a job that’s disguised as ownership?
-excerpt: Many martial arts school owners fall into the trap of doing everything themselves, taking home whatever’s left at the end of the month, and calling it profit.
-But real business growth comes from systems, structure, and the ability to step away without everything falling apart.
-This post breaks down the difference between being a busy school operator… and building a school that lasts"
-
+seo_title: "Building a Martial Arts Business vs Running a Hobby - MABS"
+seo_description: "Are you building a business that works for you — or just working harder in a job that's disguised as ownership? Learn the difference between being a busy school operator and building a school that lasts."
 ---
 
 <div style="position: relative; width: 100%; height: 400px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url('/assets/img/business-versus-owner.png') center/cover; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-8); box-shadow: var(--shadow-lg);">
