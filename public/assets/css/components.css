@@ -81,14 +81,14 @@
   .focus-blurb h2 {
     font-size: var(--size-xl);
     margin-bottom: var(--space-3);
-    color: var(--color-charcoal);
+    color: var(--color-white);
     font-weight: 800;
   }
   
   .focus-blurb p {
     font-size: var(--size-base);
     line-height: 1.6;
-    color: var(--color-ink);
+    color: var(--color-white);
     margin: 0;
   }
   
@@ -188,7 +188,7 @@
 
 .testimonial h3 { 
   margin: 0; 
-  color: var(--color-charcoal); 
+  color: #000000; 
   font-size: var(--size-lg); 
   line-height: 1.3; 
   font-weight: 800;
@@ -197,7 +197,7 @@
 
 .testimonial__quote { 
   font-size: 18px; 
-  color: var(--color-ink); 
+  color: #000000; 
   line-height: 1.6; 
   font-style: italic;
   position: relative;
@@ -262,7 +262,7 @@
 }
 
 .testimonial__author-name {
-  color: var(--color-charcoal);
+  color: #000000;
   font-weight: 700;
   font-size: var(--size-base);
   letter-spacing: .3px;
@@ -270,7 +270,7 @@
 }
 
 .testimonial__author-club {
-  color: var(--color-slate);
+  color: #000000;
   font-weight: 500;
   font-size: var(--size-sm);
   letter-spacing: .2px;
