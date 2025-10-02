@@ -397,8 +397,8 @@ section { padding: var(--space-6) 0; }
   
   .sticky-cta {
     bottom: 20px;
-    left: 24px;
-    right: 24px;
+    left: 32px;
+    right: 32px;
   }
   
   .sticky-cta__inner {
