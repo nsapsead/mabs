@@ -33,8 +33,25 @@
   function onScroll() {
     const y = window.scrollY;
     header.classList.toggle('site-header--condensed', y > 120);
+    
     if (window.innerWidth <= 900) {
-      sticky.classList.toggle('is-visible', y > 360);
+      // Find the "Ready to grow your school" section
+      const ctaSection = document.querySelector('section[aria-label="Final call to action"]');
+      let shouldShowSticky = y > 360;
+      
+      if (ctaSection) {
+        const ctaRect = ctaSection.getBoundingClientRect();
+        const ctaTop = ctaRect.top + y;
+        const ctaBottom = ctaRect.bottom + y;
+        
+        // Hide sticky CTA when the CTA section is in view (with some buffer)
+        const buffer = 100; // pixels of buffer
+        if (y + window.innerHeight >= ctaTop - buffer && y <= ctaBottom + buffer) {
+          shouldShowSticky = false;
+        }
+      }
+      
+      sticky.classList.toggle('is-visible', shouldShowSticky);
     } else {
       sticky.classList.remove('is-visible');
     }
