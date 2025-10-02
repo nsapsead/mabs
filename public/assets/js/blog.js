@@ -48,7 +48,7 @@ async function renderPostFromQuery() {
       metaEl.innerHTML = `
         <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4); flex-wrap: wrap;">
           <span class="category-badge" style="background: ${categoryColor}; color: white; padding: 6px 16px; border-radius: 16px; font-size: 14px; font-weight: 600;">
-            ${post.category || 'Uncategorized'}
+            ${post.category || 'Uncategorised'}
           </span>
           <span style="color: var(--color-slate);">${new Date(post.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
           <span style="color: var(--color-slate);">•</span>
@@ -175,7 +175,7 @@ function renderBlogPost(post) {
         <div class="post-image" style="width: 100%; height: 240px; background: linear-gradient(135deg, rgba(0,0,0,.1), rgba(0,0,0,.3)), url('${post.featured_image}') center/cover; position: relative;">
           <div style="position: absolute; top: var(--space-3); left: var(--space-3);">
             <span class="category-badge" style="background: ${categoryColor}; color: white; padding: 8px 16px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 4px 12px rgba(0,0,0,.2);">
-              ${post.category || 'Uncategorized'}
+              ${post.category || 'Uncategorised'}
             </span>
           </div>
         </div>
@@ -183,7 +183,7 @@ function renderBlogPost(post) {
         <div style="width: 100%; height: 240px; background: linear-gradient(135deg, var(--color-gold), var(--color-gold-600)); position: relative; display: flex; align-items: center; justify-content: center;">
           <div style="position: absolute; top: var(--space-3); left: var(--space-3);">
             <span class="category-badge" style="background: rgba(255,255,255,.2); color: white; padding: 8px 16px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; backdrop-filter: blur(10px);">
-              ${post.category || 'Uncategorized'}
+              ${post.category || 'Uncategorised'}
             </span>
           </div>
           <div style="color: white; font-size: 48px; font-weight: 800; opacity: 0.3;">MABS</div>

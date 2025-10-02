@@ -8,7 +8,7 @@ tags: ["coaching", "strategy", "growth", "leadership", "business development"]
 featured_image: "/assets/img/one-on-one-coaching.png"
 reading_time: 4
 seo_title: "1-on-1 Martial Arts School Coaching - Transform Your Business"
-seo_description: "Discover how personalized 1-on-1 coaching can be the catalyst your martial arts school needs to grow, improve retention, and unlock new revenue opportunities."
+seo_description: "Discover how personalised 1-on-1 coaching can be the catalyst your martial arts school needs to grow, improve retention, and unlock new revenue opportunities."
 ---
 
 <div style="position: relative; width: 100%; height: 400px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url('/assets/img/one-on-one-coaching.png') center/cover; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-8); box-shadow: var(--shadow-lg);">
@@ -17,7 +17,7 @@ seo_description: "Discover how personalized 1-on-1 coaching can be the catalyst 
 
 Running a martial arts school is one of the most rewarding things you can do, but it can also be one of the most challenging.
 
-You're not just teaching techniques. You're managing timetables, refining programs, running events, upgrading systems and juggling business operations.  All while trying to grow your student base and stay inspired.
+You're not just teaching techniques. You're managing timetables, refining programmes, running events, upgrading systems and juggling business operations.  All while trying to grow your student base and stay inspired.
 
 **It's a lot.**
 
@@ -31,7 +31,7 @@ Unlike group webinars or generic online courses, a private coaching session is a
 
 In just a couple of hours, you could:
 - Map out a new upgrade system that adds significant value to your business
-- Design and launch a Leadership Program that builds future black belts and assistant coaches
+- Design and launch a Leadership Programme that builds future black belts and assistant coaches
 - Restructure your timetable to maximise mat efficiency and student retention
 - Plan an open day or tournament that becomes the talk of your community
 - Transition your current curriculum to a more scalable, rotating model
@@ -64,5 +64,5 @@ Not sure if it's the right fit? Send through a message and we'll figure it out t
 
 **About the Author**: Paul Veldman is the founder of MABS and has helped over 200 martial arts schools grow their businesses. [Connect with Paul on LinkedIn](https://linkedin.com/in/paulveldman) or [join our community](https://www.skool.com/mabs).
 
-**Ready to take action?** [email Paul for more details](mailto:paul@mabs.com.au) or [join our MABS program](https://www.skool.com/mabs) to get personalized help growing your martial arts school.
+**Ready to take action?** [email Paul for more details](mailto:paul@mabs.com.au) or [join our MABS programme](https://www.skool.com/mabs) to get personalised help growing your martial arts school.
 
