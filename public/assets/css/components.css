@@ -339,12 +339,15 @@
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 28px;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--color-gold);
     animation: swipe-arrow 1.5s ease-in-out infinite;
     z-index: 100;
     display: block !important;
     opacity: 1 !important;
     pointer-events: none;
+    letter-spacing: 8px;
   }
   
   .swipe-text {
