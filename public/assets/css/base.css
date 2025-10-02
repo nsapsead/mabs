@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-charcoal);
   margin: 0 0 var(--space-3);
   line-height: 1.2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 h1 { font-size: var(--size-3xl); }
 h2 { font-size: var(--size-2xl); }
@@ -288,7 +289,7 @@ ul { padding-left: 1.1rem; margin: 0 0 var(--space-3); }
   z-index: 0;
 }
 /* Removed extra hero-section bottom gradient per request; keep gradient only on media glow */
-.hero h1 { color: var(--color-gold); margin-bottom: var(--space-3); }
+.hero h1 { color: var(--color-gold); margin-bottom: var(--space-3); text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); }
 .hero p { color: #E5E7EB; max-width: 720px; }
 .hero__actions { display: flex; gap: 12px; margin-top: var(--space-4); flex-wrap: wrap; }
 .hero__media { position: relative; }
@@ -299,7 +300,8 @@ ul { padding-left: 1.1rem; margin: 0 0 var(--space-3); }
 
 /* Sections */
 section { padding: var(--space-6) 0; }
-.section__eyebrow { font-weight: 700; color: var(--color-gold); text-transform: uppercase; letter-spacing: .08em; margin-bottom: var(--space-2); }
+.section__eyebrow { font-weight: 700; color: var(--color-gold); text-transform: uppercase; letter-spacing: .08em; margin-bottom: var(--space-2); text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+.section__title { text-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); }
 
 /* Cards */
 .card {
