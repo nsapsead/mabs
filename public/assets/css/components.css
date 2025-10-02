@@ -70,6 +70,18 @@
   }
   
   /* Show and style focus section on mobile */
+  .section[aria-label="Our Focus"] {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background: var(--color-charcoal);
+    padding: var(--space-6) 0;
+    order: 2;
+    position: relative !important;
+    z-index: 10 !important;
+    min-height: 200px !important;
+  }
+  
   .focus-blurb {
     display: block !important;
     text-align: center;
@@ -81,6 +93,7 @@
     background: var(--color-charcoal);
     border-radius: var(--radius-lg);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    order: 2;
   }
   
   .focus-blurb h2 {
@@ -106,17 +119,10 @@
     order: 1;
   }
   
-  .focus-blurb {
-    order: 2;
-  }
-  
-  .section[aria-label="Our Focus"] {
-    order: 2;
-    display: block !important;
+  /* Override data-reveal animation for focus section on mobile */
+  .section[aria-label="Our Focus"] [data-reveal] {
     opacity: 1 !important;
-    visibility: visible !important;
-    background: var(--color-charcoal);
-    padding: var(--space-6) 0;
+    transform: translateY(0) !important;
   }
 }
 
