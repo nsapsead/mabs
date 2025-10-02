@@ -5,13 +5,13 @@ date: "2025-10-02"
 author: "Paul Veldman"
 category: "Entrepreneurship"
 tags: ["coaching", "strategy", "ownership", "business structure"]
-featured_image: "/assets/img/business-versus-owner.png"
+featured_image: "/assets/img/logos/business-versus-owner.png"
 reading_time: 4
 seo_title: "Building a Martial Arts Business vs Running a Hobby - MABS"
 seo_description: "Are you building a business that works for you — or just working harder in a job that's disguised as ownership? Learn the difference between being a busy school operator and building a school that lasts."
 ---
 
-<div style="position: relative; width: 100%; height: 400px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url('/assets/img/business-versus-owner.png') center/cover; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-8); box-shadow: var(--shadow-lg);">
+<div style="position: relative; width: 100%; height: 400px; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), url('/assets/img/logos/business-versus-owner.png') center/cover; border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-8); box-shadow: var(--shadow-lg);">
   <h1 style="color: white; font-size: 4rem; font-weight: 900; text-align: center; text-shadow: 0 6px 20px rgba(0,0,0,0.7); line-height: 1.1; max-width: 900px; margin: 0; padding: var(--space-6); letter-spacing: -0.02em;">Are You Building a Business…or Just Running a Really Busy Hobby?</h1>
 </div>
 
