@@ -22,34 +22,6 @@
   });
 })();
 
-// Simple slider
-(() => {
-  const slider = document.querySelector('[data-slider]');
-  if (!slider) return;
-  const track = slider.querySelector('[data-track]');
-  const slides = Array.from(track.children);
-  let index = 0;
-  const prev = slider.querySelector('.slider__prev');
-  const next = slider.querySelector('.slider__next');
-  const dotsEl = slider.querySelector('.slider__dots');
-  const dots = slides.map((_, i) => {
-    const d = document.createElement('button');
-    d.className = 'slider__dot';
-    d.setAttribute('role', 'tab');
-    d.addEventListener('click', () => { index = i; update(); });
-    dotsEl.appendChild(d);
-    return d;
-  });
-  function update() {
-    track.style.transform = `translateX(${-index * 100}%)`;
-    dots.forEach((d, i) => d.classList.toggle('is-active', i === index));
-  }
-  prev.addEventListener('click', () => { index = (index - 1 + slides.length) % slides.length; update(); });
-  next.addEventListener('click', () => { index = (index + 1) % slides.length; update(); });
-  // Autoplay
-  setInterval(() => { index = (index + 1) % slides.length; update(); }, 6000);
-  update();
-})();
 
 // Sticky header + mobile sticky CTA
 (() => {

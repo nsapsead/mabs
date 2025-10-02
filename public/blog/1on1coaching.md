@@ -1,7 +1,7 @@
 ---
 title: "The 1-on-1 Coaching Advantage"
 excerpt: "Running a martial arts school is one of the most rewarding things you can do, but it can also be one of the most challenging. Get a roadmap tailored specifically to your school, your goals and your next big idea."
-date: "2025-01-20"
+date: "2025-09-20"
 author: "Paul Veldman"
 category: "Business Growth"
 tags: ["coaching", "strategy", "growth", "leadership", "business development"]

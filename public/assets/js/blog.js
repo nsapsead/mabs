@@ -245,7 +245,8 @@ function getCategoryColor(category) {
     'Marketing': '#EF4444',
     'Operations': '#06B6D4',
     'Finance': '#84CC16',
-    'Technology': '#F97316'
+    'Technology': '#F97316',
+    'Entrepreneurship': '#8B5CF6'
   };
   return colors[category] || '#6B7280';
 }

@@ -1,9 +1,9 @@
 ---
 title: "Are You Building a Business…or Just Running a Really Busy Hobby?"
 excerpt: "Are you building a business that runs without you—or just staying busy? Learn the difference between being an owner-operator and building a lasting martial arts school."
-date: "2025-01-20"
+date: "2025-10-02"
 author: "Paul Veldman"
-category: "Business Growth"
+category: "Entrepreneurship"
 tags: ["coaching", "strategy", "ownership", "business structure"]
 featured_image: "/assets/img/business-versus-owner.png"
 reading_time: 4
