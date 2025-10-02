@@ -355,7 +355,7 @@ section { padding: var(--space-6) 0; }
 
 .sticky-cta__inner {
   margin: 0 auto; 
-  max-width: 50%; 
+  max-width: 35%; 
   background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-600) 100%);
   border: none; 
   padding: 12px 20px; 
