@@ -334,11 +334,11 @@
     display: none;
   }
   
-  #testimonials .swipe-arrow {
-    position: absolute;
-    top: 120px;
+  .testimonials-grid .swipe-arrow {
+    position: fixed;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-50%);
     font-size: 24px;
     font-weight: bold;
     color: var(--color-gold);
