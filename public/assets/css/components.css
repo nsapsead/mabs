@@ -304,28 +304,15 @@
   letter-spacing: .2px;
 }
 
-/* How MABS helps section eyebrow - black with gold glow */
-#how .section__eyebrow {
-  color: #000000;
-  text-shadow: 0 0 20px rgba(240, 212, 65, 1.0), 0 0 40px rgba(240, 212, 65, 0.8);
-}
-
-/* Programmes section eyebrow - black with gold glow */
-#programs .section__eyebrow {
-  color: #000000;
-  text-shadow: 0 0 20px rgba(240, 212, 65, 1.0), 0 0 40px rgba(240, 212, 65, 0.8);
-}
-
-/* Results section eyebrow - black with gold glow */
-#testimonials .section__eyebrow {
-  color: #000000;
-  text-shadow: 0 0 20px rgba(240, 212, 65, 1.0), 0 0 40px rgba(240, 212, 65, 0.8);
-}
-
-/* About section eyebrow - black with gold glow */
-#about .section__eyebrow {
-  color: #000000;
-  text-shadow: 0 0 20px rgba(240, 212, 65, 1.0), 0 0 40px rgba(240, 212, 65, 0.8);
+/* Desktop only - section eyebrows with black text and gold glow */
+@media (min-width: 769px) {
+  #how .section__eyebrow,
+  #programs .section__eyebrow,
+  #testimonials .section__eyebrow,
+  #about .section__eyebrow {
+    color: #000000;
+    text-shadow: 0 0 20px rgba(240, 212, 65, 1.0), 0 0 40px rgba(240, 212, 65, 0.8);
+  }
 }
 
 /* Responsive adjustments */
