@@ -318,6 +318,50 @@
   .testimonial {
     padding: var(--space-5);
   }
+  
+  /* Extra small mobile optimizations */
+  h1 { 
+    font-size: var(--size-xl); 
+    line-height: 1.1;
+  }
+  
+  h2 { 
+    font-size: var(--size-lg); 
+    line-height: 1.2;
+  }
+  
+  h3 { 
+    font-size: var(--size-base); 
+    line-height: 1.3;
+  }
+  
+  .hero h1 {
+    font-size: var(--size-xl);
+    line-height: 1.1;
+  }
+  
+  .section__title {
+    font-size: var(--size-lg);
+    line-height: 1.2;
+  }
+  
+  /* Improve button sizing for very small screens */
+  .button {
+    padding: var(--space-3) var(--space-4);
+    font-size: var(--size-sm);
+    min-height: 44px; /* Touch target size */
+  }
+  
+  .hero__actions {
+    flex-direction: column;
+    gap: var(--space-3);
+    align-items: stretch;
+  }
+  
+  .hero__actions .button {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .faq {

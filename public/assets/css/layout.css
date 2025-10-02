@@ -93,6 +93,63 @@
   .footer__logo img {
     height: 35px;
   }
+  
+  /* Mobile container adjustments */
+  .container {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+  
+  /* Mobile section spacing */
+  .section {
+    padding: var(--space-6) 0;
+  }
+  
+  .hero {
+    padding: var(--space-6) 0;
+  }
+  
+  /* Mobile split layout adjustments */
+  .split {
+    gap: var(--space-6);
+  }
+  
+  .split > * {
+    flex: 1;
+  }
+  
+  /* Mobile grid adjustments */
+  .grid--2col {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  
+  .grid--3col {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  
+  /* Mobile tile adjustments */
+  .tiles {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+  
+  .tile {
+    padding: var(--space-5);
+  }
+  
+  .tile h4 {
+    font-size: var(--size-base);
+    font-weight: 700;
+    min-height: auto;
+    margin-bottom: var(--space-2);
+  }
+  
+  .tile p {
+    font-size: var(--size-sm);
+    line-height: 1.5;
+  }
 }
 /* Alternating sections + subtle texture */
 .section--alt { 

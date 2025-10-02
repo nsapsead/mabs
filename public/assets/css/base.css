@@ -158,6 +158,127 @@ ul { padding-left: 1.1rem; margin: 0 0 var(--space-3); }
   .nav__toggle { display: inline-flex; }
 }
 
+/* Mobile Typography Optimizations */
+@media (max-width: 768px) {
+  /* Adjust heading sizes for better mobile readability */
+  h1 { 
+    font-size: var(--size-2xl); 
+    line-height: 1.2;
+    margin-bottom: var(--space-4);
+  }
+  
+  h2 { 
+    font-size: var(--size-xl); 
+    line-height: 1.3;
+    margin-bottom: var(--space-3);
+  }
+  
+  h3 { 
+    font-size: var(--size-lg); 
+    line-height: 1.4;
+    margin-bottom: var(--space-3);
+  }
+  
+  h4 { 
+    font-size: var(--size-base); 
+    line-height: 1.4;
+    margin-bottom: var(--space-2);
+  }
+  
+  /* Improve paragraph readability on mobile */
+  p { 
+    font-size: var(--size-base);
+    line-height: 1.6;
+    margin-bottom: var(--space-4);
+  }
+  
+  /* Hero section mobile optimizations */
+  .hero h1 { 
+    font-size: var(--size-2xl);
+    line-height: 1.1;
+    margin-bottom: var(--space-4);
+  }
+  
+  .hero p { 
+    font-size: var(--size-base);
+    line-height: 1.6;
+    margin-bottom: var(--space-5);
+  }
+  
+  /* Section headings mobile adjustments */
+  .section__title {
+    font-size: var(--size-xl);
+    line-height: 1.3;
+    margin-bottom: var(--space-4);
+  }
+  
+  .section__eyebrow {
+    font-size: var(--size-sm);
+    margin-bottom: var(--space-2);
+  }
+  
+  /* Mobile color optimizations for better contrast */
+  .hero {
+    background: var(--color-charcoal);
+    color: var(--color-white);
+  }
+  
+  .hero h1 {
+    color: var(--color-gold);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .hero p {
+    color: #E5E7EB;
+    opacity: 0.95;
+  }
+  
+  /* Improve button contrast on mobile */
+  .button--primary {
+    background: var(--color-gold);
+    color: var(--color-charcoal);
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(255, 194, 43, 0.3);
+  }
+  
+  .button--ghost {
+    border-color: var(--color-gold);
+    color: var(--color-gold);
+    background: transparent;
+  }
+  
+  /* Card text improvements for mobile */
+  .card h3 {
+    color: var(--color-charcoal);
+    font-weight: 700;
+  }
+  
+  .card p {
+    color: var(--color-ink);
+    line-height: 1.6;
+  }
+  
+  /* Testimonial text improvements */
+  .testimonial h3 {
+    color: var(--color-charcoal);
+    font-weight: 700;
+  }
+  
+  .testimonial__quote {
+    color: var(--color-ink);
+    line-height: 1.6;
+  }
+  
+  .testimonial__author-name {
+    color: var(--color-charcoal);
+    font-weight: 700;
+  }
+  
+  .testimonial__author-club {
+    color: var(--color-slate);
+  }
+}
+
 /* Hero */
 .hero {
   position: relative;
