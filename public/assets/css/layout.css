@@ -118,6 +118,12 @@
     flex: 1;
   }
   
+  /* Reorder community coaching section - image above text on mobile */
+  #programs .split:first-of-type {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
   /* Mobile grid adjustments */
   .grid--2col {
     grid-template-columns: 1fr;
