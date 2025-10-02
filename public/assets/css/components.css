@@ -43,7 +43,7 @@
   background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-600) 100%);
   color: var(--color-white);
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(225, 187, 95, .3);
+  box-shadow: 0 8px 24px rgba(240, 212, 65, .3);
   border-color: var(--color-gold);
 }
 
@@ -156,8 +156,8 @@
   right: -20px;
   bottom: -20px;
   background: 
-    radial-gradient(circle at 20% 20%, rgba(225, 187, 95, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(225, 187, 95, 0.03) 0%, transparent 50%);
+    radial-gradient(circle at 20% 20%, rgba(240, 212, 65, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(240, 212, 65, 0.03) 0%, transparent 50%);
   border-radius: var(--radius-xl);
   z-index: -1;
 }
@@ -278,7 +278,7 @@
   font-size: var(--size-xl);
   font-weight: 800;
   letter-spacing: 1px;
-  box-shadow: 0 4px 12px rgba(225, 187, 95, 0.3);
+  box-shadow: 0 4px 12px rgba(240, 212, 65, 0.3);
   flex-shrink: 0;
 }
 
@@ -631,7 +631,7 @@
 .filter-group input:focus {
   outline: none;
   border-color: var(--color-gold);
-  box-shadow: 0 0 0 3px rgba(225, 187, 95, 0.1);
+  box-shadow: 0 0 0 3px rgba(240, 212, 65, 0.1);
 }
 
 .blog-posts .card {
@@ -700,7 +700,7 @@
   background: var(--color-gold) !important;
   color: white !important;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(225, 187, 95, 0.3);
+  box-shadow: 0 4px 8px rgba(240, 212, 65, 0.3);
 }
 
 /* Prose styles for blog content */
@@ -818,7 +818,7 @@
 
 .blog-posts .card:hover .post-author div:first-child {
   transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(225, 187, 95, 0.4);
+  box-shadow: 0 8px 20px rgba(240, 212, 65, 0.4);
 }
 
 /* Smooth transitions for all interactive elements */

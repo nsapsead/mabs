@@ -360,7 +360,7 @@ section { padding: var(--space-6) 0; }
   border: none; 
   padding: 12px 20px; 
   border-radius: 16px; 
-  box-shadow: 0 8px 32px rgba(225, 187, 95, 0.4), 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(240, 212, 65, 0.4), 0 4px 16px rgba(0, 0, 0, 0.1);
   display: flex; 
   justify-content: center;
   backdrop-filter: blur(10px);
@@ -405,7 +405,7 @@ section { padding: var(--space-6) 0; }
     max-width: 100%;
     padding: 16px 20px;
     border-radius: 20px;
-    box-shadow: 0 12px 40px rgba(225, 187, 95, 0.5), 0 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 12px 40px rgba(240, 212, 65, 0.5), 0 6px 20px rgba(0, 0, 0, 0.15);
   }
   
   .sticky-cta__inner .button {
@@ -423,7 +423,7 @@ section { padding: var(--space-6) 0; }
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
   50% {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25), 0 0 0 4px rgba(225, 187, 95, 0.2);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25), 0 0 0 4px rgba(240, 212, 65, 0.2);
   }
 }
 
