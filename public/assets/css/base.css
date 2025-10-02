@@ -308,10 +308,10 @@ section { padding: var(--space-6) 0; }
 
 .sticky-cta__inner {
   margin: 0 auto; 
-  max-width: 90%; 
+  max-width: 70%; 
   background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-600) 100%);
   border: none; 
-  padding: 16px 24px; 
+  padding: 12px 20px; 
   border-radius: 16px; 
   box-shadow: 0 8px 32px rgba(255, 194, 43, 0.4), 0 4px 16px rgba(0, 0, 0, 0.1);
   display: flex; 
@@ -350,22 +350,22 @@ section { padding: var(--space-6) 0; }
   
   .sticky-cta {
     bottom: 20px;
-    left: 16px;
-    right: 16px;
+    left: 24px;
+    right: 24px;
   }
   
   .sticky-cta__inner {
     max-width: 100%;
-    padding: 20px 24px;
+    padding: 16px 20px;
     border-radius: 20px;
     box-shadow: 0 12px 40px rgba(255, 194, 43, 0.5), 0 6px 20px rgba(0, 0, 0, 0.15);
   }
   
   .sticky-cta__inner .button {
     font-size: 18px;
-    padding: 16px 32px;
+    padding: 14px 28px;
     border-radius: 16px;
-    min-width: 200px;
+    min-width: 180px;
     animation: subtle-pulse 2s ease-in-out infinite;
   }
 }
