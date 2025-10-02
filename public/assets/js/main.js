@@ -77,3 +77,34 @@
   sections.forEach(s => s && observer.observe(s));
 })();
 
+// Mobile testimonials swipe functionality
+(() => {
+  if (window.innerWidth <= 768) {
+    const testimonialsGrid = document.querySelector('.testimonials-grid');
+    if (testimonialsGrid) {
+      let hasScrolled = false;
+      
+      // Hide swipe indicator after first interaction
+      const hideIndicator = () => {
+        if (!hasScrolled) {
+          hasScrolled = true;
+          testimonialsGrid.style.setProperty('--swipe-indicator-opacity', '0');
+          setTimeout(() => {
+            const indicator = testimonialsGrid.querySelector('::after');
+            if (indicator) {
+              testimonialsGrid.style.setProperty('--swipe-indicator-opacity', '0');
+            }
+          }, 300);
+        }
+      };
+      
+      // Add touch and scroll event listeners
+      testimonialsGrid.addEventListener('touchstart', hideIndicator, { passive: true });
+      testimonialsGrid.addEventListener('scroll', hideIndicator, { passive: true });
+      
+      // Add smooth scroll behavior
+      testimonialsGrid.style.scrollBehavior = 'smooth';
+    }
+  }
+})();
+
