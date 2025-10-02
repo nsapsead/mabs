@@ -1,8 +1,8 @@
 /* Design Tokens for MABS - Gold/Charcoal palette */
 :root {
   /* Colors */
-  --color-gold: #FFC22B;
-  --color-gold-600: #E5AE00;
+  --color-gold: #e1bb5f;
+  --color-gold-600: #d4a94a;
   --color-charcoal: #111111;
   --color-ink: #1F2937;
   --color-slate: #6B7280;
