@@ -66,27 +66,43 @@
 
 @media (max-width: 768px) {
   .benefits-section {
-    padding: var(--space-3) 0;
+    display: none;
   }
   
-  .benefits-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-4);
-    max-width: 400px;
+  /* Show and style focus section on mobile */
+  .focus-blurb {
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto var(--space-6);
+    padding: var(--space-4);
   }
   
-  .benefit-item {
-    gap: var(--space-2);
-    padding: var(--space-2);
+  .focus-blurb h2 {
+    font-size: var(--size-xl);
+    margin-bottom: var(--space-3);
+    color: var(--color-charcoal);
+    font-weight: 800;
   }
   
-  .benefit-icon {
-    width: 56px;
-    height: 56px;
-  }
-  
-  .benefit-item h3 {
+  .focus-blurb p {
     font-size: var(--size-base);
+    line-height: 1.6;
+    color: var(--color-ink);
+    margin: 0;
+  }
+  
+  /* Reorder sections for mobile - move schools section up */
+  .schools-section {
+    order: 1;
+  }
+  
+  .focus-blurb {
+    order: 2;
+  }
+  
+  .section[aria-label="Our Focus"] {
+    order: 2;
   }
 }
 
