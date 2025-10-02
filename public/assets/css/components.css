@@ -330,6 +330,28 @@
     position: relative;
   }
   
+  .testimonials-grid::before {
+    content: "👆";
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    animation: swipe-arrow 1.5s ease-in-out infinite;
+    z-index: 10;
+  }
+  
+  @keyframes swipe-arrow {
+    0%, 100% {
+      transform: translateX(-50%) translateX(0);
+      opacity: 0.7;
+    }
+    50% {
+      transform: translateX(-50%) translateX(10px);
+      opacity: 1;
+    }
+  }
+  
   .testimonials-grid::after {
     content: "← Swipe to see more →";
     position: absolute;
@@ -343,6 +365,18 @@
     width: 100%;
     opacity: var(--swipe-indicator-opacity, 1);
     transition: opacity 0.3s ease;
+    animation: swipe-hint 2s ease-in-out infinite;
+  }
+  
+  @keyframes swipe-hint {
+    0%, 100% {
+      transform: translateX(-50%) translateY(0);
+      opacity: var(--swipe-indicator-opacity, 0.6);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-5px);
+      opacity: var(--swipe-indicator-opacity, 1);
+    }
   }
   
   .testimonials-grid::-webkit-scrollbar {
