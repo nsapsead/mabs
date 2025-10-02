@@ -25,7 +25,7 @@ function createHeader(currentPage = '') {
         <nav class="nav" aria-label="Primary">
           ${navHTML}
         </nav>
-        <button class="button nav__toggle" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+        <button class="button nav__toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu"></button>
       </div>
     </header>
   `;

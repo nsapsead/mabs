@@ -151,7 +151,54 @@ ul { padding-left: 1.1rem; margin: 0 0 var(--space-3); }
 }
 
 /* Navigation always stays in dark mode regardless of browser preference */
-.nav__toggle { display: none; }
+.nav__toggle { 
+  display: none; 
+  background: var(--color-gold);
+  color: var(--color-charcoal);
+  border: none;
+  font-weight: 700;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: var(--radius-md);
+  transition: all var(--duration-med) var(--easing-standard);
+}
+
+.nav__toggle:hover {
+  background: var(--color-gold-600);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.nav__toggle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 2px;
+  background: var(--color-charcoal);
+  box-shadow: 0 -6px 0 var(--color-charcoal), 0 6px 0 var(--color-charcoal);
+  transition: all var(--duration-fast) var(--easing-standard);
+}
+
+.nav__toggle[aria-expanded="true"]::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+  box-shadow: 0 0 0 var(--color-charcoal);
+}
+
+.nav__toggle[aria-expanded="true"]::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 20px;
+  height: 2px;
+  background: var(--color-charcoal);
+}
 
 @media (max-width: 900px) {
   .nav { display: none; }
@@ -308,7 +355,7 @@ section { padding: var(--space-6) 0; }
 
 .sticky-cta__inner {
   margin: 0 auto; 
-  max-width: 70%; 
+  max-width: 50%; 
   background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-600) 100%);
   border: none; 
   padding: 12px 20px; 
