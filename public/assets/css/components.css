@@ -144,7 +144,7 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  padding: var(--space-6);
+  padding: var(--space-8);
 }
 
 /* Gallery background elements */
@@ -323,7 +323,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 0;
-    padding: var(--space-4) 0 var(--space-8) 0;
+    padding: var(--space-6) 0 var(--space-8) 0;
     scrollbar-width: none;
     -ms-overflow-style: none;
     -webkit-overflow-scrolling: touch;
@@ -334,20 +334,24 @@
     display: none;
   }
   
-  .testimonials-grid .swipe-arrow {
+  #testimonials {
+    position: relative;
+  }
+  
+  #testimonials .swipe-arrow {
     position: absolute;
-    top: -50px;
+    top: 200px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 36px;
+    font-size: 62px;
     font-weight: bold;
     color: var(--color-gold);
     animation: swipe-arrow 1.5s ease-in-out infinite;
-    z-index: 100;
+    z-index: 9999;
     display: block !important;
     opacity: 1 !important;
     pointer-events: none;
-    letter-spacing: 15px;
+    letter-spacing: 26px;
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
   }
   
