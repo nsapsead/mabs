@@ -89,7 +89,7 @@
   
   section[aria-label="Our Focus"] .focus-blurb {
     display: block !important;
-    text-align: center !important;
+    text-align: left !important;
     max-width: 100% !important;
     margin: 0 auto var(--space-6) !important;
     padding: var(--space-4) !important;
