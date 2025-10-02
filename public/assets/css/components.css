@@ -333,21 +333,23 @@
   .testimonials-grid::before {
     content: "👆";
     position: absolute;
-    top: -25px;
+    top: -35px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 20px;
+    font-size: 24px;
     animation: swipe-arrow 1.5s ease-in-out infinite;
     z-index: 10;
+    display: block !important;
+    opacity: 1 !important;
   }
   
   @keyframes swipe-arrow {
     0%, 100% {
-      transform: translateX(-50%) translateX(0);
-      opacity: 0.7;
+      transform: translateX(-50%) translateX(-15px);
+      opacity: 0.6;
     }
     50% {
-      transform: translateX(-50%) translateX(10px);
+      transform: translateX(-50%) translateX(15px);
       opacity: 1;
     }
   }
@@ -355,26 +357,27 @@
   .testimonials-grid::after {
     content: "← Swipe to see more →";
     position: absolute;
-    bottom: -30px;
+    bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: var(--size-xs);
+    font-size: var(--size-sm);
     color: var(--color-slate);
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     width: 100%;
     opacity: var(--swipe-indicator-opacity, 1);
     transition: opacity 0.3s ease;
     animation: swipe-hint 2s ease-in-out infinite;
+    display: block !important;
   }
   
   @keyframes swipe-hint {
     0%, 100% {
       transform: translateX(-50%) translateY(0);
-      opacity: var(--swipe-indicator-opacity, 0.6);
+      opacity: var(--swipe-indicator-opacity, 0.7);
     }
     50% {
-      transform: translateX(-50%) translateY(-5px);
+      transform: translateX(-50%) translateY(-8px);
       opacity: var(--swipe-indicator-opacity, 1);
     }
   }
