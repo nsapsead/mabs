@@ -309,7 +309,8 @@
   #how .section__eyebrow,
   #programs .section__eyebrow,
   #testimonials .section__eyebrow,
-  #about .section__eyebrow {
+  #about .section__eyebrow,
+  #faq .section__eyebrow {
     color: #000000;
     text-shadow: 0 0 20px rgba(240, 212, 65, 1.0), 0 0 40px rgba(240, 212, 65, 0.8);
   }
