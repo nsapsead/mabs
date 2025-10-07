@@ -14,7 +14,7 @@
     panel.style.display = 'none';
     panel.innerHTML = `
       <div style="position:absolute;right:0;top:0;bottom:0;width:78%;max-width:380px;background:var(--color-offwhite);padding:24px;border-left:1px solid rgba(0,0,0,.06);">
-        <nav style="display:grid;gap:16px;font-weight:700">
+        <nav style="display:grid;gap:16px;font-weight:700;padding-top:60px;">
           <a href="/programs.html">Programs</a>
           <a href="/blog.html">Blog</a>
           <a href="/about.html">About</a>
