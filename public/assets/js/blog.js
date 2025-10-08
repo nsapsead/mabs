@@ -2,7 +2,14 @@ async function loadHomeBlogList() {
   const list = document.getElementById('blog-list');
   if (!list) return;
   try {
-    const res = await fetch('http://localhost:3001/api/blog/posts', { cache: 'no-store' });
+    // Try localhost API first (for development), fallback to static file
+    let res;
+    try {
+      res = await fetch('http://localhost:3001/api/blog/posts', { cache: 'no-store' });
+    } catch (e) {
+      // Fallback to static file for production
+      res = await fetch('/blog/posts.json', { cache: 'no-store' });
+    }
     const posts = await res.json();
     const latest = posts.slice(0, 3);
     list.innerHTML = latest.map(p => `
@@ -23,11 +30,19 @@ async function renderPostFromQuery() {
   const slug = params.get('slug');
   if (!slug) return;
   try {
-    const res = await fetch(`http://localhost:3001/api/blog/posts/${encodeURIComponent(slug)}`, { cache: 'no-store' });
+    // Try localhost API first (for development), fallback to static file
+    let res;
+    try {
+      res = await fetch(`http://localhost:3001/api/blog/posts/${encodeURIComponent(slug)}`, { cache: 'no-store' });
+    } catch (e) {
+      // Fallback to static file for production
+      res = await fetch('/blog/posts.json', { cache: 'no-store' });
+    }
     if (!res.ok) {
       throw new Error(`HTTP error! status: ${res.status}`);
     }
-    const post = await res.json();
+    const posts = await res.json();
+    const post = posts.find(p => p.slug === slug);
     if (!post) return;
     
     // Update page title and meta
@@ -114,53 +129,57 @@ async function renderPostFromQuery() {
   } catch {}
 }
 
-function renderBlogIndex() {
+async function renderBlogIndex() {
   const list = document.getElementById('blog-index');
   if (!list) {
     console.error('Blog index element not found');
     return;
   }
   console.log('Loading blog posts...');
-  fetch('http://localhost:3001/api/blog/posts', { cache: 'no-store' })
-    .then(r => {
-      if (!r.ok) {
-        throw new Error(`HTTP error! status: ${r.status}`);
-      }
-      return r.json();
-    })
-    .then(posts => {
-      console.log('Loaded posts:', posts.length);
-      // Add category filter
-      const categories = [...new Set(posts.map(p => p.category).filter(Boolean))];
-      const categoryFilter = `
-        <div class="blog-filters" style="margin-bottom: var(--space-6);">
-          <div class="filter-group">
-            <label for="category-filter" style="font-weight: 600; margin-right: var(--space-2);">Category:</label>
-            <select id="category-filter" style="padding: var(--space-1) var(--space-2); border: 1px solid rgba(0,0,0,.1); border-radius: var(--radius-sm);">
-              <option value="">All Categories</option>
-              ${categories.map(cat => `<option value="${cat}">${cat}</option>`).join('')}
-            </select>
-          </div>
-          <div class="filter-group" style="margin-left: var(--space-4);">
-            <label for="search-input" style="font-weight: 600; margin-right: var(--space-2);">Search:</label>
-            <input type="text" id="search-input" placeholder="Search posts..." style="padding: var(--space-1) var(--space-2); border: 1px solid rgba(0,0,0,.1); border-radius: var(--radius-sm); min-width: 200px;">
-          </div>
+  try {
+    // Try localhost API first (for development), fallback to static file
+    let res;
+    try {
+      res = await fetch('http://localhost:3001/api/blog/posts', { cache: 'no-store' });
+    } catch (e) {
+      // Fallback to static file for production
+      res = await fetch('/blog/posts.json', { cache: 'no-store' });
+    }
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
+    const posts = await res.json();
+    console.log('Loaded posts:', posts.length);
+    // Add category filter
+    const categories = [...new Set(posts.map(p => p.category).filter(Boolean))];
+    const categoryFilter = `
+      <div class="blog-filters" style="margin-bottom: var(--space-6);">
+        <div class="filter-group">
+          <label for="category-filter" style="font-weight: 600; margin-right: var(--space-2);">Category:</label>
+          <select id="category-filter" style="padding: var(--space-1) var(--space-2); border: 1px solid rgba(0,0,0,.1); border-radius: var(--radius-sm);">
+            <option value="">All Categories</option>
+            ${categories.map(cat => `<option value="${cat}">${cat}</option>`).join('')}
+          </select>
         </div>
-      `;
-      
-      list.innerHTML = categoryFilter + `
-        <div class="blog-posts">
-          ${posts.map(p => renderBlogPost(p)).join('')}
+        <div class="filter-group" style="margin-left: var(--space-4);">
+          <label for="search-input" style="font-weight: 600; margin-right: var(--space-2);">Search:</label>
+          <input type="text" id="search-input" placeholder="Search posts..." style="padding: var(--space-1) var(--space-2); border: 1px solid rgba(0,0,0,.1); border-radius: var(--radius-sm); min-width: 200px;">
         </div>
-      `;
-      
-      // Add event listeners for filtering
-      setupBlogFilters(posts);
-    })
-    .catch(error => {
-      console.error('Error loading blog posts:', error);
-      list.innerHTML = '<p>Error loading blog posts. Please try again later.</p>';
-    });
+      </div>
+    `;
+    
+    list.innerHTML = categoryFilter + `
+      <div class="blog-posts">
+        ${posts.map(p => renderBlogPost(p)).join('')}
+      </div>
+    `;
+    
+    // Add event listeners for filtering
+    setupBlogFilters(posts);
+  } catch (error) {
+    console.error('Error loading blog posts:', error);
+    list.innerHTML = '<p>Error loading blog posts. Please try again later.</p>';
+  }
 }
 
 function renderBlogPost(post) {
