@@ -354,7 +354,7 @@ section { padding: var(--space-6) 0; }
 }
 
 .sticky-cta__inner {
-  margin: 0 0 0 auto; 
+  margin: 0 auto; 
   max-width: fit-content; 
   background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-600) 50%, var(--color-gold) 100%);
   background-size: 200% 200%;
@@ -444,7 +444,7 @@ section { padding: var(--space-6) 0; }
   
   .sticky-cta__inner {
     max-width: fit-content;
-    margin: 0 0 0 auto;
+    margin: 0 auto;
     padding: 9px 14px;
     border-radius: 23px;
     box-shadow: 
