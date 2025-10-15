@@ -19,7 +19,7 @@
           <a href="/blog.html">Blog</a>
           <a href="/about.html">About</a>
           <a href="/contact.html">Contact</a>
-          <a class="button button--primary" href="https://www.skool.com/mabs/" target="_blank" rel="noopener noreferrer">Join the Community</a>
+          <a class="button button--primary" href="https://www.skool.com/mabs/" target="_blank" rel="noopener noreferrer">Start your FREE 7 day trial!!</a>
         </nav>
       </div>`;
     document.body.appendChild(panel);
