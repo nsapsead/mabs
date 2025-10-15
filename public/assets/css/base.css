@@ -416,7 +416,7 @@ section { padding: var(--space-6) 0; }
   position: relative;
   z-index: 2;
   text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.5px;
   white-space: nowrap;
   text-align: center;
   line-height: 1.2;
@@ -467,7 +467,7 @@ section { padding: var(--space-6) 0; }
     min-width: auto;
     animation: subtle-pulse 2s ease-in-out infinite;
     text-transform: uppercase;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
     white-space: nowrap;
     text-align: center;
     line-height: 1.2;
