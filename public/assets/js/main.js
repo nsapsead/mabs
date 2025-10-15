@@ -28,7 +28,7 @@
   const header = document.querySelector('.site-header');
   const sticky = document.createElement('div');
   sticky.className = 'sticky-cta';
-  sticky.innerHTML = `<div class="sticky-cta__inner"><a class="button button--primary" href="https://www.skool.com/mabs/" target="_blank" rel="noopener noreferrer">Start your <strong>FREE</strong> 7 day trial!!</a></div>`;
+  sticky.innerHTML = `<div class="sticky-cta__inner"><a class="button button--primary" href="https://www.skool.com/mabs/" target="_blank" rel="noopener noreferrer">Start your<strong>FREE</strong>7 day trial!!</a></div>`;
   document.body.appendChild(sticky);
   function onScroll() {
     const y = window.scrollY;
